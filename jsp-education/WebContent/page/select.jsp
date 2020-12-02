@@ -9,7 +9,7 @@
 		<td>피자 이름</td>
 		<td>가격</td>
 	</tr>
-<%
+	<%
 	try {
 		Class.forName("oracle.jdbc.OracleDriver");
 		Connection conn = DriverManager.getConnection
@@ -24,12 +24,12 @@
 		ResultSet rs = stmt.executeQuery("SELECT PCODE, PNAME, COST FROM TBL_PIZZA_01");
 		while (rs.next()) {
 		%>
-			<tr>
-				<td> <%= rs.getString(1) %></td>
-				<td> <%= rs.getString(2) %></td>
-				<td> <%= rs.getInt(3) %></td>
-			</tr>
-		<%
+	<tr>
+		<td> <%= rs.getString(1) %></td>
+		<td> <%= rs.getString(2) %></td>
+		<td> <%= rs.getInt(3) %></td>
+	</tr>
+	<%
 		}
 		stmt.close();
 		conn.close();
