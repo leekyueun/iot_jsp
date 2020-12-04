@@ -12,7 +12,7 @@
 	try {
 		Class.forName("oracle.jdbc.OracleDriver");
 		Connection conn = DriverManager.getConnection
-			("jdbc:oracle:thin:@//122.128.169.32:1521/xe", "sdh_6", "1234");
+			("jdbc:oracle:thin:@//122.128.169.32:1521/xe", "sdh_16", "1234");
 
 		Statement stmt = conn.createStatement();
 		
@@ -26,4 +26,6 @@
 	catch (Exception e) {
 		e.printStackTrace();
 	}
+	
+	response.sendRedirect("../index.jsp");
 %>

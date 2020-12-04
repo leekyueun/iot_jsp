@@ -17,7 +17,8 @@
         </tr>
         <tr>
             <td>피자이름</td>
-            <td><input type="text" name="pizza_name"></p></td>
+            <td><input type="text" name="pizza_name"></p>
+            </td>
         </tr>
         <tr>
             <td>피자가격</td>
